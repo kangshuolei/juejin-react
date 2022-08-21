@@ -1,0 +1,98 @@
+.top {
+    transform: translate3d(0,-5rem,0);
+    // transform: translateZ(0);
+}
+.homeMainMenu{
+    position: fixed;
+    top: 5rem;
+    width: 100%;
+    height: 3.833rem;
+    z-index: 100;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
+    transition: all .2s;
+    // transform: translateZ(0);
+
+    &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 200%;
+        z-index: -1;
+        left: 0;
+        background-color: #fff;
+    }
+
+        .homeMainContain {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+    
+    
+}
+
+.timeline_container {
+    max-width: 915px;
+    height: auto;
+    margin: 0 auto;
+    .timeline_content {
+        position: relative;
+            .entry_list_container {
+                margin-top: 5rem;
+                width: 700px;
+                background-color: RGB(255,255,255);
+                margin-right: 21.667rem;
+                border-radius: 2px;
+                header {
+                    border-bottom: 1px solid hsla(0,0%,59.2%,.1);
+                    color: black;
+                    padding: 10px 8px;
+                    width: 100%;
+                    height: 50px;
+                    line-height: 50px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    .navItem {
+                        text-decoration: none;
+                        text-align: center;
+                        width: 60px;
+                        height: 15px;
+                        line-height: 15px;
+                        cursor: pointer;
+                        color: #909090;
+                        font-size: 14px;
+                        border-right: 1px solid hsla(0,0%,59.2%,.2);
+                    }
+                }
+            }
+        }
+        aside {
+            position: absolute;
+            padding: 10px 8px;
+            top: 0px;
+            right: 0px;
+            z-index: 1;
+            width: 200px;
+            background-color: RGB(255,255,255);
+
+            .signin_tip {
+                .siginText {
+                    margin-top: 2px;
+                    color: #1d2129;
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+            }
+        }
+        @media screen and (max-width: 960px) {
+            aside {
+                display: none;
+            }
+        }
+
+}
+

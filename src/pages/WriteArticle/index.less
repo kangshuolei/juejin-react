@@ -1,0 +1,56 @@
+.bytemd {
+    height: calc(100vh - 5.334rem);
+
+    .markdown-body {
+      li {
+        list-style-type: decimal;
+      }
+    }
+}
+.markHeader {
+    padding: 0 27px;
+    height: 5.334rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    z-index: 100;
+    display: flex;
+
+    .HeaderInput {
+      flex: 1 1 auto;
+      height: 100%;
+      border: none;
+      margin: 0;
+      padding: 0;
+      font-size: 24px;
+      font-weight: 500;
+      color: #1d2129;
+      outline: none;
+    }
+
+    .rightMain {
+      display: flex;
+      align-items: center;
+
+      div {
+        margin: 0 8px 0 8px;
+      }
+      .rightText {
+        font-size: 14px;
+        white-space: nowrap;
+        color: #c9cdd4;
+        cursor: default;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .switchMark {
+        font-size: 2rem;
+        line-height: 1;
+        vertical-align: middle;
+        color: #909090;
+        cursor: pointer;
+        border-radius: 2px;
+      }
+    }
+}
